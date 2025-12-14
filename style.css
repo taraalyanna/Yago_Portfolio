@@ -1,5 +1,5 @@
 .hero {
-  background-image: url("images/bg.png");
+  background-image: url("bg.png");
   background-size: cover;
   background-position: center;
   font-family: Arial, sans-serif;
@@ -170,4 +170,5 @@ body {
 
 .toggle-btn:hover {
     opacity: 0.8;
+
 }
