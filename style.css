@@ -1,0 +1,173 @@
+.hero {
+  background-image: url("images/bg.png");
+  background-size: cover;
+  background-position: center;
+  font-family: Arial, sans-serif;
+  padding: 20px;
+}
+
+/* Center content globally with max width */
+.page-wrapper {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* HEADER + FOOTER stay full-width and centered */
+.navigation, hr, .footer {
+    width: 100%;
+    text-align: center;
+    display: block;
+}
+
+.navigation h2 a {
+  margin-right: 10px;
+  text-decoration: none;
+  color: #ffffff;
+  font-family: "Lucida Handwriting", cursive;
+}
+
+/* ROW layout */
+.row {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.left-column {
+  flex: 1;
+  min-width: 250px;
+}
+
+.right-column {
+  flex: 2;
+  min-width: 300px;
+}
+
+#profile-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+h3 {
+  color: #ffffff;
+  border-bottom: 2px solid #efa7a7;
+  padding-bottom: 5px;
+  margin-bottom: 10px;
+  font-family: "Lucida Handwriting", cursive;
+}
+
+.profileimg {
+  width: 200px;
+  border-radius: 50px;
+  margin-bottom: 10px;
+}
+
+h2.name {
+  font-size: 30px;
+  color: #ffffff;
+  margin: 0;
+  text-align: center;
+  font-family: Times New Roman;
+}
+
+.selftitle {
+  font-size: 20px;
+  color: #efa7a7;
+  margin: 0;
+  text-align: center;
+  font-style: italic;
+  font-family: Times New Roman;
+}
+
+.left-column div, .right-column div {
+  margin-bottom: 20px;
+}
+
+.footer {
+  text-align: center;
+  margin-top: 20px;
+  color: #ffffff;
+}
+
+input[type="text"], input[type="email"] {
+  width: 50%;
+  padding: 5px;
+  margin-top: 5px;
+  margin-bottom: 10px;
+  box-sizing: border-box;
+}
+
+input[type="submit"] {
+  padding: 5px 15px;
+  cursor: pointer;
+}
+
+.box {
+  background-color: #efa7a7;
+  color: #ffffff;
+  padding: 10px;
+  border-radius: 5px;
+  width: fit-content;
+}
+
+p, dl dt, dd {
+  color: #ffffff;
+  font-family: Times New Roman;
+}
+
+.about {
+  text-align: justify;
+  width: 90%;
+  color: #ffffff;
+  font-family: Times New Roman;
+}
+
+/* THEME VARIABLES */
+:root {
+    --bg: #ffffff;
+    --text: #111111;
+    --btn-bg: #eeeeee;
+    --btn-text: #111111;
+}
+
+.dark {
+    --bg: #111111;
+    --text: #ffffff;
+    --btn-bg: #333333;
+    --btn-text: #ffffff;
+}
+
+/* REMOVE FLEX FROM BODY — THIS WAS BREAKING YOUR LAYOUT */
+body {
+    background: var(--bg);
+    color: var(--text);
+    font-family: Arial, sans-serif;
+    transition: background 0.3s ease, color 0.3s ease;
+    margin: 0;
+    padding: 0;
+    position: relative;
+}
+
+/* THEME BUTTON (works independently) */
+.toggle-btn {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    padding: 12px 20px;
+    background: var(--btn-bg);
+    color: var(--btn-text);
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background 0.3s ease, color 0.3s ease;
+    z-index: 999;
+}
+
+.toggle-btn:hover {
+    opacity: 0.8;
+}
